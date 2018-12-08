@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  banco-mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+    ports:
+      - 3306:3306
+
+
+  # website:
+  #   image: //nome da imagem já criada, ou no dockerhub
+  #   volumes:
+  #     - //diretorio hospedeiro:diretorio container
+  #   ports:
+  #     - 8080:8080
+  #   depends_on:
+  #     - banco-mysql
