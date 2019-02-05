@@ -60,7 +60,7 @@ Status: Downloaded newer image for hello-world:latest
 Hello from Docker!
 
 ```
-### Senha e Encode de Character
+### Senha e Encode de Caracter
 ---
 Recomenda-se que, caso a senha utilize algum caracter especial, a utilização do [HTML Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp) para substituir o caracter em questão deve ser feita.
 **Porém**, caso a senha inserida em `http_proxy.conf` contenha alguns destes caracteres, a variável será ignorada, e nem na execução do comando `docker info | grep HTTP` retornará o esperado. 
