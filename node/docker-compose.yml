@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  node:
+    image: node
+    
+    environment:
+      http_port: 8080
+      
+    ports:
+      - "8080:8080"
+      
+    entrypoint: 
+      - node
+      - app.js
+      
+    volumes:
+      - "$PWD:/usr/src/app"
+      
+    working_dir: /usr/src/app
